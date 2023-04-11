@@ -1,0 +1,48 @@
+.sideBar {
+  flex: 3;
+  height: calc(100vh-50px);
+  overflow-y: scroll;
+}
+.sidebar-wrapper {
+  padding: 20px;
+}
+.sidebar-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sidebar-list-items {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.sidebar-icon{
+   margin-right: 15px;
+}
+.sidebar-button{
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    padding: 10px;
+}
+.sidebar-friend-list{
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.sidebar-friend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.sidebar-friend-image{
+width: 32px;
+height: 32px;
+border-radius: 50%;
+object-fit: cover;
+margin-right: 10px;
+}

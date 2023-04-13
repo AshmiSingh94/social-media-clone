@@ -1,5 +1,6 @@
 import React from "react";
 import "./Rightbar.css";
+import { Users } from "../utils/constants";
 function Rightbar() {
   return (
     <div className="rightBar">
@@ -11,7 +12,6 @@ function Rightbar() {
             alt=""
           />
           <span className="birthday-text">
-            {" "}
             <b>Paula Foster </b> and <b>3 others</b> have a birthday today
           </span>
         </div>
@@ -21,18 +21,21 @@ function Rightbar() {
           alt=""
         />
         <h4 className="rightbar-title">Online Friends</h4>
-        <ul className="rightbar-friend-list">
-          <li className="rightbar-friend">
-            <div className="right-profile-image-container">
-              <img
-                className="rightbar-profile-image"
-                src="https://www.befunky.com/images/prismic/1f427434-7ca0-46b2-b5d1-7d31843859b6_funky-focus-red-flower-field-after.jpeg?auto=avif,webp&format=jpg&width=863"
-                alt=""
-              />
-              <span className="rightbar-online"></span>
-            </div>
-          </li>
-        </ul>
+        {Users.map((item) => (
+          <ul key={item.id} className="rightbar-friend-list">
+            <li className="rightbar-friend">
+              <div className="right-profile-image-container">
+                <img
+                  className="rightbar-profile-image"
+                  src={item.profilepicture}
+                  alt=""
+                />
+                <span className="rightbar-online"></span>
+              </div>
+              <span className="rightbar-online-usename">{item.userName}</span>
+            </li>
+          </ul>
+        ))}
       </div>
     </div>
   );

@@ -1,7 +1,8 @@
 .rightBar {
   flex: 3.5;
   height: calc(100vh-50px);
-  background-color: #7fffd4;
+  position: sticky;
+  top: 0px;
 }
 .rightbar-wrapper {
   padding: 20px 20px 0 0;
@@ -16,36 +17,53 @@
   height: 4opx;
   margin-left: 10px;
 }
-.birthday-text{
-    margin-top: 10px;
+.birthday-text {
+  margin-top: 10px;
 }
-.rightbar-ad{
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 10px;
-    
+.rightbar-ad {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
 }
-.rightbar-title{
-display: flex;
-margin-left: 10px;
+.rightbar-title {
+  display: flex;
+  margin-left: 10px;
+  font-weight: 700;
 }
-.rightbar-friend-list{
-list-style: none;
-margin: 0;
-padding: 0;
-
+.rightbar-friend-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.rightbar-friend{
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+.rightbar-friend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
-.right-profile-image-container{
-    margin-right: 10px;
-
+.right-profile-image-container {
+  margin-right: 15px;
+  position: relative;
+  
 }
-.rightbar-profile-image{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+.rightbar-profile-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 10px;
+  
+}
+.rightbar-online {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: lime;
+  position: absolute;
+  bottom: 2px;
+  right: -5px;
+  border: 2px solid #fff;
+}
+.rightbar-online-usename{
+font-size: 16px;
+font-weight: 500;
 }

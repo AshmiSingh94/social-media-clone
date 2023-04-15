@@ -12,6 +12,11 @@ export const Users = [
     userName: "Luca Benjamin",
   },
   {
+    id:"701d61d8-db7c-11ed-afa1-0242ac120002",
+    profilepicture :"https://images.pexels.com/photos/36029/aroni-arsa-children-little.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    userName:" Scott Harrison"
+  },
+  {
     id: "3e9e66ca-d9c9-11ed-afa1-0242ac120002",
     profilepicture:
       "https://e1.pxfuel.com/desktop-wallpaper/858/840/desktop-wallpaper-nice-whatsapp-dp-profile-pics-145-nice-dp-cute-dp-thumbnail.jpg",

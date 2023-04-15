@@ -1,6 +1,6 @@
 .sideBar {
   flex: 3;
-  height: calc(100vh-50px);
+  height: 100%;
   overflow-y: scroll;
   position: sticky;
   top: 0px;
@@ -16,7 +16,11 @@
 .sidebar-list-items {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  padding: 10px;
+}
+.sidebar-list-items:hover{
+  background: #faf5f5;
+  cursor: pointer;
 }
 .sidebar-icon{
    margin-right: 15px;
@@ -39,7 +43,11 @@
 .sidebar-friend{
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    padding: 10px;
+}
+.sidebar-friend:hover{
+  background: #eeecec64;
+  cursor: pointer;
 }
 .sidebar-friend-image{
 width: 32px;
